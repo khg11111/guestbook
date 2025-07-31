@@ -1,9 +1,12 @@
 {
-  "name": "mytestexpressapp",
+  "name": "image-description-app",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "mobile": "npx react-native start"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -11,6 +14,24 @@
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "bcrypt": "^5.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "sqlite3": "^5.1.6",
+    "multer": "^1.4.5-lts.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "react-native": "0.72.6",
+    "react": "18.2.0",
+    "react-native-vector-icons": "^10.0.0",
+    "react-native-image-picker": "^7.0.3",
+    "react-navigation": "^4.4.4",
+    "@react-navigation/native": "^6.1.9",
+    "@react-navigation/stack": "^6.3.20",
+    "react-native-screens": "^3.27.0",
+    "react-native-safe-area-context": "^4.7.4",
+    "react-native-gesture-handler": "^2.13.4",
+    "@react-native-async-storage/async-storage": "^1.19.5"
   }
 }
